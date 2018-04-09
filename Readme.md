@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Денис Пуховский](https://up.htmlacademy.ru/adaptive/14/user/478669).
-* Наставник: `Неизвестно`.
+* Наставник: [Полина Катышева](https://htmlacademy.ru/profile/polina).
 
 ---
 
