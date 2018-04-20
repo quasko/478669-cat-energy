@@ -1,13 +1,25 @@
 .program {
-  background: #65a93c;
+/*background-color: #65a93c;*/
   background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 306px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
 }
 
 .program__title {
   font-family: @oswald-regular;
   font-size: 36px;
   line-height: 36px;
+  font-weight: normal;
   color: white;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+
 }
 
 .program__text {
@@ -15,13 +27,91 @@
   font-size: 14px;
   line-height: 14px;
   color: white;
+  text-align: center;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.program__image {
+  position: relative;
 }
 
 .program__link {
   font-family: @oswald-regular;
   font-size: 14px;
   line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
   color: white;
   background-color: #68b738;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+}
+
+@media (min-width: @tablet-width){
+  .program {
+    background: none;
+    padding-left: 120px;
+    min-height: 850px;
+    position: relative;
+
+  }
+  .program__title {
+    font-size: 60px;
+    line-height: 60px;
+    color: @black1;
+    text-align: left;
+    width: 420px;
+    margin-bottom: 45px;
+  }
+
+  .program__text {
+    font-size: 20px;
+    line-height: 20px;
+    color: @black1;
+    text-align: left;
+    width: 420px;
+    margin-bottom: 50px;
+  }
+
+  .program__image {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 75px;
+    /*временно пока нету больших картинок*/
+    transform-origin: bottom left;
+    transform: scale(2.4);
+  }
+
+  .program__link {
+    width: auto;
+    padding: 15px 25px;
+    display: inline;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .program {
+    min-height: 550px;
+    position: relative;
+
+  }
+
+  .program__title {
+    margin-top: 85px;
+  }
+  .program__image {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 500px;
+    /*временно пока нету больших картинок*/
+    transform-origin: bottom left;
+    transform: scale(2.1);
+  }
 }
