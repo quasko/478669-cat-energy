@@ -67,6 +67,7 @@
   }
 
   .before-after__price {
+    margin: 0;
     margin-left: auto;
     font-size: 20px;
     width: 192px;
@@ -74,3 +75,32 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .before-after {
+    padding: 30px 110px;
+    display: flex;
+    min-height: 590px;
+  }
+  .before-after__desktop-column-wrapper {
+    width: 50%;
+  }
+  .before-after__title {
+    margin-bottom: 140px;
+  }
+  .before-after__text {
+    margin-bottom: 70px;
+    width: 435px;
+  }
+  .before-after__price-wrapper {
+    width: 435px;
+    flex-wrap: wrap;
+  }
+  .before-after__price {
+    width: 435px;
+    text-align: left;
+  }
+  .before-after__price-value {
+    margin-left: 20px;
+  }
+
+}
