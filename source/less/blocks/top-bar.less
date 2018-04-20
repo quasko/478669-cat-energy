@@ -1,0 +1,31 @@
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-bar__logo {
+  width: 235px;
+  height: 66px;
+  display: block;
+}
+
+.top-bar__button {
+  font-size: 0;
+  border: 0;
+  background-color: transparent;
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 20px;
+  height: 20px;
+  margin: 23px;
+}
+
+@media (min-width: @tablet-width) {
+  .top-bar__logo {
+    width: 190px;
+  }
+  .top-bar__button {
+    display: none;
+  }
+}
