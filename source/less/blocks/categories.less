@@ -1,7 +1,29 @@
+.categories {
+  padding: 10px 20px;
+}
+
 .categories__list {
-  list-style: none;
+  .reset-list;
 }
 
 .categories__item {
-  padding: 10px 20px;
+  margin-bottom: 20px;
 }
+
+@media (min-width: @tablet-width) {
+  .categories {
+    padding: 10px 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .categories {
+    padding: 10px 110px;
+  }
+
+  .categories__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
