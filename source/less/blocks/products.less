@@ -2,28 +2,15 @@
   .reset-list;
 }
 
-.products__item {
-
-}
-
 @media (min-width: @tablet-width) {
   .products {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .products__item {
     margin-top: 90px;
     margin-bottom: 50px;
-
-    &:nth-child(odd) {
-      margin-right: 30px;
-    }
-
-    &:nth-child(even) {
-      margin-left: 30px;
-    }
   }
 }
-
-

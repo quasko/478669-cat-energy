@@ -1,12 +1,60 @@
 .order-all {
   background-color: #71b548;
-  background-image: url("../../gift-photo-mobile@1x.jpg");
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   width: 280px;
-  height: 290px;
+  min-height: 225px;
+  padding-top: 65px;
+}
+
+.order-all__image {
+  display: block;
+  margin: 0 auto 65px auto;
 }
 
 .order-all__text {
   font-family: @arial;
   font-size: 16px;
   line-height: 20px;
+  color: #ffffff;
+  width: 170px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .order-all {
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    padding: 0 90px;
+    box-sizing: border-box;
+    align-items: center;
+  }
+
+  .order-all__image {
+    margin: 0;
+    margin-right: auto;
+  }
+
+  .order-all__text {
+    margin: 0;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order-all {
+    flex-direction: column;
+    width: 245px;
+    box-sizing: border-box;
+    padding-top: 65px;
+  }
+
+  .order-all__image {
+    margin-bottom: 65px;
+  }
+
+  .order-all__text {
+    text-align: center;
+  }
 }

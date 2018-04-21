@@ -21,6 +21,8 @@
   line-height: 20px;
   color: @black1;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .catalog__show-text-small {
@@ -28,6 +30,8 @@
   font-size: 12px;
   line-height: 16px;
   color: @black4;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .catalog__show-all-link {
@@ -47,19 +51,6 @@
   text-align: center;
   margin: 0;
   box-sizing: border-box;
-}
-
-.catalog__show-more-text,
-.catalog__show-text-small {
-  margin: 0;
-}
-
-.catalog__show-more-text {
-  margin-bottom: 15px;
-}
-
-.catalog__show-text-small {
-  margin-bottom: 25px;
 }
 
 .catalog__show-all-icon {
@@ -116,5 +107,17 @@
 @media (min-width: @desktop-width) {
   .catalog {
     padding: 0 110px;
+  }
+
+  .catalog__all {
+    width: 245px;
+  }
+
+  .catalog__button {
+    width: 169px;
+  }
+
+  .catalog__show-all-link {
+    width: 169px;
   }
 }
