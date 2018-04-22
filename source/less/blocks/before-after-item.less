@@ -1,9 +1,19 @@
+.before-after-item {
+  width: 125px;
+  text-align: center;
+  padding: 15px 0;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+  position: relative;
+}
+
 .before-after-item__value {
   font-family: @oswald-regular;
   font-size: 24px;
   line-height: 24px;
   color: @black1;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .before-after-item__title {
@@ -11,4 +21,31 @@
   font-size: 12px;
   line-height: 12px;
   color: @black4;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  min-width: 80px;
+  position: absolute;
+  bottom: -15px;
+  transform: translateX(-50%);
+  left: 50%;
+  background-color: #f2f2f2;
+}
+
+@media (min-width: @tablet-width) {
+  .before-after-item {
+    width: 162px;
+  }
+
+  .before-after-item__value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .before-after-item__title {
+    font-size: 14px;
+    line-height: 14px;
+    white-space: nowrap;
+    bottom: -8px;
+  }
 }

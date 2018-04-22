@@ -1,5 +1,9 @@
 .copyright {
   background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
 }
 
 .copyright__link {
@@ -7,4 +11,10 @@
   font-size: 16px;
   line-height: 16px;
   color: @black4;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__link {
+    margin-right: 20px;
+  }
 }

@@ -2,12 +2,20 @@
   background-color: #ffffff;
 }
 
+.contacts__header {
+  display: flex;
+  padding: 30px 20px;
+}
+
 .contacts__welcome {
   font-family: @oswald-regular;
   font-size: 16px;
   line-height: 20px;
   color: @black1;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 140px;
 }
 
 .contacts__address {
@@ -15,8 +23,51 @@
   font-size: 14px;
   line-height: 20px;
   color: @black4;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 140px;
 }
 
 .contacts__map {
   background-image: url("../img/bg-map-mobile@1x.png");
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__header {
+    padding: 70px;
+  }
+
+  .contacts__welcome {
+    font-size: 20px;
+    line-height: 25px;
+    width: 170px;
+  }
+
+  .contacts__address {
+    font-size: 16px;
+    width: 170px;
+    text-align: right;
+  }
+
+  .contacts__map {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__header {
+    position: absolute;
+    box-sizing: border-box;
+    width: 570px;
+    padding: 65px 75px;
+    left: 110px;
+    top: 95px;
+    background-color: #ffffff;
+  }
 }
