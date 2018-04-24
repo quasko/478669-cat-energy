@@ -149,11 +149,52 @@
 
 @media (min-width: @desktop-width) {
   .categories-item {
-    width: 470px;
-    padding: 80px 50px 0;
+    width: 570px;
+    padding: 76px 50px 0;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      left: 52px;
+      right: auto;
+    }
+  }
+
+  .categories-item__title {
+    padding-left: 165px;
+    width: auto;
+    margin-bottom: 75px;
+
+    &::before {
+      right: auto;
+    }
+
+    &--thin::before {
+      width: 70px;
+      height: 97px;
+      top: 40px;
+      left: 66px;
+      background-size: 70px 97px;
+    }
+
+    &--thick::before {
+      width: 134px;
+      height: 56px;
+      top: 69px;
+      left: 34px;
+      background-size: 134px 56px;
+    }
   }
 
   .categories-item__text {
     width: 100%;
+    padding-left: 2px;
+    padding-bottom: 0;
+    margin-bottom: 30px;
+  }
+
+  .categories-item__link {
+    padding-left: 2px;
   }
 }

@@ -67,7 +67,7 @@
     padding-left: 120px;
     min-height: 780px;
     position: relative;
-    margin-bottom: 32px;
+    margin-bottom: 60px;
 
     &::before {
       display: none;
@@ -113,11 +113,16 @@
   .program {
     min-height: 550px;
     position: relative;
-    margin-left: 80px;
+    padding-top: 0;
+    margin-bottom: 3px;
   }
 
   .program__title {
     margin-top: 85px;
+  }
+
+  .program__text {
+    margin-bottom: 67px;
   }
 
   .program__image {
@@ -126,7 +131,6 @@
     bottom: 0;
     left: 500px;
     /*временно пока нету больших картинок*/
-    transform-origin: bottom left;
-    transform: scale(2.1);
+    display: none;
   }
 }

@@ -35,6 +35,10 @@
   line-height: 18px;
   color: @black4;
   margin: 0;
+
+  br {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -43,7 +47,6 @@
     counter-reset: itemNum;
     margin-bottom: 35px;
   }
-
 
   .advantages__list {
     display: flex;
@@ -106,7 +109,8 @@
 
 @media (min-width: @desktop-width) {
   .advantages {
-    padding: 10px 110px;
+    padding: 0 40px;
+    margin-bottom: 0;
   }
 
   .advantages__list {
@@ -115,6 +119,7 @@
   }
 
   .advantages__item {
+    width: 245px;
     margin-right: unset;
 
     &:nth-child(2n) {

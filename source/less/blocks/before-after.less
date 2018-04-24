@@ -1,5 +1,8 @@
 .before-after {
   background-color: #f2f2f2;
+}
+
+.before-after__wrapper {
   padding: 0 20px 34px 20px;
 }
 
@@ -52,9 +55,12 @@
 
 @media (min-width: @tablet-width) {
   .before-after {
-    padding: 0 30px;
     background-color: #ffffff;
     background-image: linear-gradient(white 0%, white 57%, #f2f2f2 57%, #f2f2f2 100%);
+  }
+
+  .before-after__wrapper {
+    padding: 0 30px;
     border-top: 1px solid #e6e6e6;
     padding-bottom: 70px;
   }
@@ -93,7 +99,7 @@
 
   .before-after__image {
     height: 514px;
-    width: auto;
+    width: 610px;
     margin: 0 auto;
     left: 18px;
     top: 3px;
@@ -104,9 +110,15 @@
 
 @media (min-width: @desktop-width) {
   .before-after {
-    padding: 30px 110px;
+    padding-bottom: 64px;
+    background-image: linear-gradient(white 0%, white 29%, #f2f2f2 29%, #f2f2f2 100%);
+  }
+
+  .before-after__wrapper {
+    padding: 0 40px;
     display: flex;
     min-height: 590px;
+    border: none;
   }
 
   .before-after__desktop-column-wrapper {
@@ -114,12 +126,20 @@
   }
 
   .before-after__title {
-    margin-bottom: 140px;
+    margin-bottom: 146px;
+    padding: 0;
+    padding-top: 57px;
   }
 
   .before-after__text {
     margin-bottom: 70px;
     width: 435px;
+  }
+
+  .before-after__image {
+    margin: 0;
+    left: -38px;
+    margin-bottom: 42px;
   }
 
   .before-after__price-wrapper {
@@ -133,6 +153,10 @@
   }
 
   .before-after__price-value {
-    margin-left: 20px;
+    margin-left: 59px;
+  }
+
+  .before-after__list {
+    margin-bottom: 48px;
   }
 }
