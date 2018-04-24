@@ -28,6 +28,10 @@
   margin-top: 0;
   margin-bottom: 0;
   width: 140px;
+
+  br {
+    display: none;
+  }
 }
 
 .contacts__map {
@@ -39,7 +43,7 @@
 
 @media (min-width: @tablet-width) {
   .contacts__header {
-    padding: 70px;
+    padding: 64px 70px 56px;
   }
 
   .contacts__welcome {
@@ -52,6 +56,10 @@
     font-size: 16px;
     width: 170px;
     text-align: right;
+
+    br {
+      display: inline;
+    }
   }
 
   .contacts__map {

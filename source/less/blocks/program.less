@@ -65,8 +65,9 @@
   .program {
     background: none;
     padding-left: 120px;
-    min-height: 850px;
+    min-height: 780px;
     position: relative;
+    margin-bottom: 32px;
 
     &::before {
       display: none;
@@ -79,7 +80,7 @@
     color: @black1;
     text-align: left;
     width: 420px;
-    margin-bottom: 45px;
+    margin-bottom: 42px;
   }
 
   .program__text {
@@ -88,23 +89,23 @@
     color: @black1;
     text-align: left;
     width: 420px;
-    margin-bottom: 50px;
+    margin-bottom: 64px;
   }
 
   .program__image {
     position: absolute;
     z-index: -1;
-    bottom: 0;
-    left: 75px;
-    /*временно пока нету больших картинок*/
-    transform-origin: bottom left;
-    transform: scale(2.4);
+    left: 110px;
+    top: 230px;
+    height: 610px;
+    width: auto;
   }
 
   .program__link {
-    width: auto;
-    padding: 15px 25px;
+    padding: 11px 25px;
     display: inline;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 

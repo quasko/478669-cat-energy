@@ -38,7 +38,54 @@
 }
 
 @media (min-width: @tablet-width) {
+  .buttons-list {
+    width: 570px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .buttons-list__button {
     font-size: 20px;
+    border-bottom: 1px dotted #bebebe;
+    padding-bottom: 6px;
+  }
+
+  .buttons-list__scale {
+    width: 428px;
+    height: 6px;
+    background-color: #dcdcdc;
+    border: none;
+    margin-top: -5px;
+  }
+
+  .buttons-list__bar {
+    background-color: transparent;
+    height: 34px;
+    width: 50%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      width: 8px;
+      height: 8px;
+      background-color: @bg-green;
+      border-radius: 50%;
+      right: -5px;
+      top: -4px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -18px;
+      right: -18px;
+      width: 33px;
+      height: 33px;
+      border: 1px solid #cdcdcd;
+      border-radius: 50%;
+      background-color: #ffffff;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+    }
   }
 }
