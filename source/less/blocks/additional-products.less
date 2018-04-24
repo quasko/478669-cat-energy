@@ -1,5 +1,6 @@
 .additional-products {
   padding: 0 20px;
+  margin-bottom: 34px;
 }
 
 .additional-products__header {
@@ -8,11 +9,23 @@
   line-height: 24px;
   color: @black1;
   font-weight: normal;
+  margin-bottom: 35px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 3px;
+    top: 14px;
+    right: -19px;
+    background-color: @bg-green;
+  }
 }
 
 .additional-products__list {
   .reset-list;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 
 .additional-products__item {
@@ -58,7 +71,7 @@
   border: none;
   text-transform: uppercase;
   padding: 10px 0;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   width: 100%;
   margin-top: 15px;
 }
