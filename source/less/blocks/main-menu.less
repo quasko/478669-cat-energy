@@ -31,6 +31,29 @@
     line-height: 25px;
     color: @black2;
     border: 0;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        bottom: 13px;
+        height: 2px;
+        background-color: @bg-green;
+      }
+    }
   }
 }
 
@@ -44,12 +67,24 @@
     font-size: 20px;
     line-height: 25px;
 
+    &::after {
+      background-color: #ffffff;
+    }
+
     &--catalog {
       color: @black1;
+
+      &::after {
+        background-color: @bg-green;
+      }
     }
 
     &--form {
       color: @black1;
+
+      &::after {
+        background-color: @bg-green;
+      }
     }
   }
 }
