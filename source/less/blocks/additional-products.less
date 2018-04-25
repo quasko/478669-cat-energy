@@ -1,27 +1,34 @@
 .additional-products {
-  padding: 0 20px;
   margin-bottom: 34px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    top: 14px;
+    right: 0;
+    background-color: @bg-green;
+  }
+}
+
+.additional-products__wrapper {
+  padding: 0 20px;
 }
 
 .additional-products__header {
+  padding: 0 20px;
   font-family: @oswald-regular;
   font-size: 24px;
   line-height: 24px;
   color: @black1;
   font-weight: normal;
-  margin-bottom: 35px;
   position: relative;
-
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 53px;
-    height: 3px;
-    top: 14px;
-    right: -19px;
-    background-color: @bg-green;
-  }
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 35px;
+  background-color: #ffffff;
 }
 
 .additional-products__list {
@@ -79,31 +86,42 @@
 
 @media (min-width: @tablet-width) {
   .additional-products {
-    padding: 0 30px;
+    position: relative;
     margin-bottom: 75px;
-  }
-
-  .additional-products__header {
-    font-size: 36px;
-    line-height: 36px;
-    margin: 0;
-    padding-left: 37px;
-    margin-bottom: 80px;
 
     &::before {
       content: "";
       position: absolute;
-      width: 28px;
+      width: 100%;
       height: 3px;
       top: 22px;
-      left: -30px;
+      left: 0;
       background-color: @bg-green;
+    }
+  }
+
+  .additional-products__wrapper {
+    padding: 0 30px;
+  }
+
+  .additional-products__header {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0 30px;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 auto;
+    padding-left: 37px;
+    margin-bottom: 80px;
+    margin-left: 30px;
+    background-color: #ffffff;
+
+    &::before {
+      display: none;
     }
 
     &::after {
-      top: 22px;
-      right: -30px;
-      width: 327px;
+      display: none;
     }
   }
 
@@ -150,12 +168,18 @@
 
 @media (min-width: @desktop-width) {
   .additional-products {
-    padding: 0 110px;
     margin-bottom: 85px;
+  }
+
+  .additional-products__header {
+    padding: 0 40px;
+    margin: 0 auto;
+    margin-bottom: 80px;
   }
 
   .additional-products__wrapper {
     display: flex;
+    padding: 0 40px;
   }
 
   .additional-products__list {
@@ -168,7 +192,7 @@
     padding: 0;
     border-left: none;
     border-right: none;
-    align-items: center;
+    align-items: baseline;
   }
 
   .additional-products__title {
