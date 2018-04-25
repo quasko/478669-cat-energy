@@ -306,16 +306,47 @@
 
 @media (min-width: @desktop-width) {
   .form {
-    padding: 0 110px;
+    /*padding: 0 110px;*/
     margin-bottom: 80px;
+  }
+
+  .form__text {
+    padding: 0 40px;
   }
 
   .form__list-wrapper {
     display: flex;
     justify-content: space-between;
+    padding: 0 40px;
+    width: @desktop-width;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 52px;
 
     .form__list {
       width: 570px;
+      margin: 0;
+      padding: 0;
+
+      &--mass {
+        padding-top: 25px;
+        padding-left: 65px;
+      }
+    }
+
+    .form__label {
+      padding: 9px 0;
+      margin-right: 18px;
+    }
+  }
+
+  .form__legend {
+    padding: 0 40px;
+    margin: 0;
+    margin-bottom: 75px;
+
+    &--additional {
+      margin-bottom: 60px;
     }
   }
 
@@ -323,26 +354,58 @@
     &--contacts {
       display: flex;
       justify-content: space-between;
+      padding: 0 40px;
+      align-items: baseline;
+      margin-bottom: 43px;
 
       .form__item {
         width: 570px;
+      }
+
+      .form__label {
+        padding: 9px 0;
+
+        &--email {
+          margin-right: 20px;
+        }
+
+        &--phone {
+          margin-left: -2px;
+          margin-right: 17px;
+        }
       }
     }
 
     &--additional {
       flex-wrap: nowrap;
       justify-content: space-between;
-      margin-bottom: 30px;
+      margin-bottom: 51px;
+      padding: 0 40px;
 
       .form__item {
         width: 245px;
         margin: 0;
       }
+
+      .form__label {
+        padding-left: 37px;
+      }
     }
+  }
+
+  .form__comments-wrapper {
+    padding: 0 40px;
+    margin-bottom: 58px;
+  }
+
+  .form__fieldset-button-wrapper {
+    padding: 0 40px;
+    margin-bottom: 75px;
   }
 
   .form__button {
     width: 570px;
     margin-right: 80px;
+    padding-left: 5px;
   }
 }

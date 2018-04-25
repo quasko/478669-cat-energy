@@ -18,20 +18,20 @@
           </div>
           <ul class="main-menu">
             <li class="main-menu__item">
-              <a class="main-menu__link" href="index.html">Главная</a>
+              <a class="main-menu__link main-menu__link--form" href="index.html">Главная</a>
             </li>
             <li class="main-menu__item">
-              <a class="main-menu__link" href="catalog.html">Каталог продукции</a>
+              <a class="main-menu__link main-menu__link--form" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-menu__item">
-              <a class="main-menu__link" href="form.html">Подбор программы</a>
+              <a class="main-menu__link main-menu__link--form" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </nav>
       </header>
     </div>
     <main class="page-main">
-      <h1 class="page-main__header container">Подбор программы</h1>
+      <h1 class="page-main__header page-main__header--form container">Подбор программы</h1>
       <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="POST">
         <p class="form__text container">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
         <div class="form__list-wrapper">
@@ -68,7 +68,7 @@
         </div>
           <fieldset class="form__fieldset form__fieldset--owner">
             <div class="container">
-              <h2 class="form__legend">Контактные данные (владельца кота)</h2>
+              <h2 class="form__legend form__legend--owner">Контактные данные (владельца кота)</h2>
               <ul class="form__list form__list--contacts">
                 <li class="form__item">
                   <label class="form__label form__label--email" for="form-email">e-mail:*</label>
@@ -81,9 +81,9 @@
               </ul>
             </div>
           </fieldset>
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--comments">
             <div class="container">
-              <h2 class="form__legend">Комментарий</h2>
+              <h2 class="form__legend form__legend--comments">Комментарий</h2>
               <div class="form__comments-wrapper">
                 <textarea class="form__textarea" placeholder="Расскажите обо всех повадках кота" name="comments"></textarea>
               </div>
