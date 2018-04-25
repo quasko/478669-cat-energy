@@ -164,32 +164,51 @@
 
 @media (min-width: @tablet-width) {
   .form {
-    padding: 0 68px 0 70px;
+    /*padding: 0 68px 0 70px;*/
   }
 
   .form__text {
     font-size: 20px;
     line-height: 30px;
-    width: 340px;
+    padding: 0 70px;
+    margin-bottom: 65px;
   }
 
   .form__list {
-    margin-bottom: 55px;
+    margin-bottom: 72px;
+    padding: 0 68px 0 61px;
 
     &--mass {
       border: 1px solid #e6e6e6;
-      padding: 25px 20px;
+      padding: 25px 40px 10px 40px;
+      width: 630px;
+
+      .form__item {
+        margin-bottom: 15px;
+      }
+    }
+
+    &--contacts {
+      margin-bottom: 60px;
+
+      .form__label {
+        &--phone {
+          margin-right: 4px;
+        }
+      }
     }
 
     &--additional {
       display: flex;
       flex-wrap: wrap;
-      margin-bottom: 0;
+      margin-bottom: 12px;
+      justify-content: space-between;
 
       .form__item {
-        width: 285px;
-        margin-right: 60px;
-        margin-bottom: 50px;
+        width: 275px;
+        /*margin-right: 60px;*/
+        margin-left: 20px;
+        margin-bottom: 30px;
 
         &:nth-child(even) {
           margin-right: 0;
@@ -198,30 +217,90 @@
     }
   }
 
+  .form__list-border-wrapper {
+    border: none;
+  }
+
+  .form__item {
+    margin-bottom: 20px;
+  }
+
+  .form__label {
+    margin-right: 10px;
+
+    &--phone {
+      margin-right: 10px;
+    }
+  }
+
   .form__label,
   .form__input-text,
   .form__textarea {
+    padding: 9px;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .form__input-text {
+    padding-left: 15px;
+
+    &--email {
+      padding-left: 18px;
+    }
+  }
+
+  .form__fieldset {
+    &--owner {
+      .form__legend {
+        width: auto;
+      }
+    }
+
+    &::after {
+      width: 100%;
+      top: 25px;
+    }
   }
 
   .form__legend {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 70px;
+    margin-bottom: 79px;
+    padding: 0 38px;
+    margin-left: 30px;
+
+    &--additional {
+      margin-bottom: 65px;
+    }
+  }
+
+  .form__comments-wrapper {
+    padding: 0 70px;
+    margin-bottom: 50px;
   }
 
   .form__textarea {
     min-height: 175px;
+    padding: 12px 17px;
   }
 
   .form__fieldset-button-wrapper {
     display: flex;
+    padding: 0 70px;
+    margin-bottom: 66px;
   }
 
   .form__button {
     width: 285px;
+    font-size: 20px;
+    line-height: 20px;
     margin-right: 60px;
+    padding: 17px 5px 17px 0;
+  }
+
+  .form__required-notify {
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
