@@ -23,11 +23,25 @@
 }
 
 @media (min-width: @tablet-width) {
+  .top-bar {
+    padding: 0;
+  }
+
   .top-bar__logo {
     width: 190px;
   }
 
+  .top-bar__logo-image {
+    width: 174px;
+  }
+
   .top-bar__button {
     display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .top-bar__logo-image {
+    width: 200px;
   }
 }
