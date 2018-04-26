@@ -82,6 +82,16 @@
   margin-bottom: 17px;
   width: 100%;
   margin-top: 15px;
+
+  &:hover,
+  &:focus {
+    background-color: @bg-green-hover;
+  }
+
+  &:active {
+    background-color: @bg-green-hover;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {

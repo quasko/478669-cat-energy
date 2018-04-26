@@ -152,6 +152,16 @@
   padding: 10px 0;
   width: 100%;
   margin-bottom: 7px;
+
+  &:hover,
+  &:focus {
+    background-color: @bg-green-hover;
+  }
+
+  &:active {
+    background-color: @bg-green-hover;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .form__required-notify {
