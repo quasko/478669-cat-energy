@@ -1,5 +1,5 @@
 .description-table {
-  width: 100%;
+  width: 142px;
   border-collapse: collapse;
 }
 
@@ -8,6 +8,7 @@
   font-size: 12px;
   line-height: 16px;
   color: @black4;
+  padding: 0;
 
   &:last-child {
     text-align: right;
@@ -15,12 +16,22 @@
 }
 
 @media (min-width: @tablet-width) {
+  .description-table {
+    width: 100%;
+  }
+
   .description-table__row {
     border-bottom: 1px solid #cdcdcd;
   }
 
   .description-table__cell {
     font-size: 16px;
-    padding: 8px 0;
+    padding: 8px 0 7px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .description-table {
+    width: 167px;
   }
 }

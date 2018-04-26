@@ -1,5 +1,5 @@
 .social {
-  padding: 25px 0;
+  padding: 24px 0 15px 0;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 }
@@ -7,13 +7,32 @@
 .social__list {
   .reset-list;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  width: 125px;
+  width: 130px;
   margin: 0 auto;
+}
+
+.social__link {
+  position: relative;
+
+  &--vk {
+    left: -1px;
+  }
+
+  &--ig {
+    left: -6px;
+  }
+
+  &--fb {
+    top: -2px;
+    left: -7px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .social {
     border: none;
+    margin-left: 30px;
   }
 }

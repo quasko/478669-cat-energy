@@ -1,6 +1,9 @@
 .before-after {
-  background-color: #f2f2f2;
-  padding: 30px 20px;
+  background-color: @bg-grey;
+}
+
+.before-after__wrapper {
+  padding: 0 20px 34px 20px;
 }
 
 .before-after__title {
@@ -10,7 +13,8 @@
   font-weight: normal;
   color: @black1;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
+  padding-top: 17px;
 }
 
 .before-after__text {
@@ -20,18 +24,22 @@
   color: @black4;
   margin: 0;
   margin-bottom: 25px;
+  padding-right: 1px;
 }
 
 .before-after__list {
   .reset-list;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 }
 
 .before-after__image {
-  width: 100%;
-  height: auto;
+  left: -20px;
+  top: -3px;
+  position: relative;
+  margin-top: 37px;
+  margin-bottom: 25px;
 }
 
 .before-after__price {
@@ -41,21 +49,34 @@
   color: @black1;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  margin-left: 3px;
 }
 
 @media (min-width: @tablet-width) {
   .before-after {
-    padding: 30px;
+    background-color: #ffffff;
+    background-image: linear-gradient(white 0%, white 57%, @bg-grey 57%, @bg-grey 100%);
+  }
+
+  .before-after__wrapper {
+    padding: 0 30px;
+    border-top: 1px solid #e6e6e6;
+    padding-bottom: 70px;
   }
 
   .before-after__title {
     font-size: 60px;
     line-height: 60px;
+    padding-top: 42px;
+    margin-bottom: 65px;
   }
 
   .before-after__text {
     font-size: 16px;
     line-height: 24px;
+    width: 700px;
+    margin-bottom: 52px;
   }
 
   .before-after__price-wrapper {
@@ -72,14 +93,32 @@
     font-size: 20px;
     width: 192px;
     text-align: right;
+    padding-top: 8px;
+    line-height: 29px;
+  }
+
+  .before-after__image {
+    height: 514px;
+    width: 610px;
+    margin: 0 auto;
+    left: 18px;
+    top: 3px;
+    margin-top: 53px;
+    margin-bottom: 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .before-after {
-    padding: 30px 110px;
+    padding-bottom: 64px;
+    background-image: linear-gradient(white 0%, white 29%, @bg-grey 29%, @bg-grey 100%);
+  }
+
+  .before-after__wrapper {
+    padding: 0 40px;
     display: flex;
     min-height: 590px;
+    border: none;
   }
 
   .before-after__desktop-column-wrapper {
@@ -87,12 +126,20 @@
   }
 
   .before-after__title {
-    margin-bottom: 140px;
+    margin-bottom: 146px;
+    padding: 0;
+    padding-top: 57px;
   }
 
   .before-after__text {
     margin-bottom: 70px;
     width: 435px;
+  }
+
+  .before-after__image {
+    margin: 0;
+    left: -38px;
+    margin-bottom: 42px;
   }
 
   .before-after__price-wrapper {
@@ -106,6 +153,10 @@
   }
 
   .before-after__price-value {
-    margin-left: 20px;
+    margin-left: 59px;
+  }
+
+  .before-after__list {
+    margin-bottom: 48px;
   }
 }

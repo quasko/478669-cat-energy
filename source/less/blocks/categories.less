@@ -1,5 +1,5 @@
 .categories {
-  padding: 10px 20px;
+  padding: 0 20px;
 }
 
 .categories__list {
@@ -7,22 +7,31 @@
 }
 
 .categories__item {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 @media (min-width: @tablet-width) {
   .categories {
-    padding: 10px 30px;
+    padding: 0 30px;
+    margin-bottom: 46px;
+  }
+
+  .categories__item {
+    margin-bottom: 28px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .categories {
-    padding: 10px 110px;
+    padding: 0 40px;
   }
 
   .categories__list {
     display: flex;
     justify-content: space-between;
+  }
+
+  .categories__item {
+    padding-bottom: 62px;
   }
 }

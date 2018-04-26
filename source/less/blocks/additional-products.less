@@ -1,18 +1,39 @@
 .additional-products {
+  margin-bottom: 34px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    top: 14px;
+    right: 0;
+    background-color: @bg-green;
+  }
+}
+
+.additional-products__wrapper {
   padding: 0 20px;
 }
 
 .additional-products__header {
+  padding: 0 20px;
   font-family: @oswald-regular;
   font-size: 24px;
   line-height: 24px;
   color: @black1;
   font-weight: normal;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 35px;
+  background-color: #ffffff;
 }
 
 .additional-products__list {
   .reset-list;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 
 .additional-products__item {
@@ -58,25 +79,60 @@
   border: none;
   text-transform: uppercase;
   padding: 10px 0;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   width: 100%;
   margin-top: 15px;
 }
 
 @media (min-width: @tablet-width) {
   .additional-products {
+    position: relative;
+    margin-bottom: 75px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      top: 22px;
+      left: 0;
+      background-color: @bg-green;
+    }
+  }
+
+  .additional-products__wrapper {
     padding: 0 30px;
   }
 
   .additional-products__header {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0 30px;
     font-size: 36px;
     line-height: 36px;
+    margin: 0 auto;
+    padding-left: 37px;
+    margin-bottom: 80px;
+    margin-left: 30px;
+    background-color: #ffffff;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .additional-products__list {
+    margin-bottom: 70px;
   }
 
   .additional-products__item {
     align-items: baseline;
     border: 1px solid #e6e6e6;
-    padding: 0 38px;
+    padding: 0 36px;
   }
 
   .additional-products__title {
@@ -85,6 +141,7 @@
     line-height: 20px;
     margin-bottom: 25px;
     margin-top: 25px;
+    padding-left: 2px;
   }
 
   .additional-products__count,
@@ -105,18 +162,24 @@
 
   .additional-products__button {
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .additional-products {
-    padding: 0 110px;
     margin-bottom: 85px;
+  }
+
+  .additional-products__header {
+    padding: 0 40px;
+    margin: 0 auto;
+    margin-bottom: 80px;
   }
 
   .additional-products__wrapper {
     display: flex;
+    padding: 0 40px;
   }
 
   .additional-products__list {
@@ -129,7 +192,7 @@
     padding: 0;
     border-left: none;
     border-right: none;
-    align-items: center;
+    align-items: baseline;
   }
 
   .additional-products__title {
