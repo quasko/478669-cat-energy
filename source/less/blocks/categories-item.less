@@ -80,6 +80,23 @@
     height: 11px;
     background: url("../img/icon-right-arrow-long.svg") no-repeat;
   }
+
+  &:hover,
+  &:focus {
+    &::after {
+      background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
+      width: 33px;
+      height: 11px;
+    }
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {

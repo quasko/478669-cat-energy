@@ -48,6 +48,15 @@
     font-size: 20px;
     border-bottom: 1px dotted #bebebe;
     padding-bottom: 6px;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid #989898;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 
   .buttons-list__scale {
@@ -80,12 +89,26 @@
       position: absolute;
       top: -18px;
       right: -18px;
-      width: 33px;
-      height: 33px;
+      box-sizing: border-box;
+      width: 34px;
+      height: 34px;
       border: 1px solid #cdcdcd;
       border-radius: 50%;
       background-color: #ffffff;
-      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    &:hover,
+    &:focus {
+      &::after {
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    &:active {
+      &::after {
+        border: 2px solid @bg-green;
+      }
     }
   }
 }
