@@ -45,6 +45,10 @@
   min-width: 320px;
   width: 100%;
   height: 365px;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+    background-size: 320px auto;
+  }
 }
 
 .contacts__map-iframe {
