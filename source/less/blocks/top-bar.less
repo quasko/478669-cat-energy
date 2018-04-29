@@ -1,6 +1,7 @@
 .top-bar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 20px;
 }
 
@@ -8,6 +9,18 @@
   width: 235px;
   height: 66px;
   display: block;
+  margin: 0;
+
+  &--link {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
 }
 
 .top-bar__button {
@@ -23,11 +36,26 @@
 }
 
 @media (min-width: @tablet-width) {
+  .top-bar {
+    padding: 0;
+  }
+
   .top-bar__logo {
     width: 190px;
   }
 
+  .top-bar__logo-image {
+    width: 174px;
+  }
+
   .top-bar__button {
     display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .top-bar__logo-image {
+    width: 200px;
+    margin-top: -5px;
   }
 }

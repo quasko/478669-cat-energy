@@ -75,19 +75,29 @@
   font-size: 16px;
   line-height: 20px;
   color: white;
-  background-color: #68b738;
+  background-color: @bg-green;
   border: none;
   text-transform: uppercase;
   padding: 10px 0;
   margin-bottom: 17px;
   width: 100%;
   margin-top: 15px;
+
+  &:hover,
+  &:focus {
+    background-color: @bg-green-hover;
+  }
+
+  &:active {
+    background-color: @bg-green-hover;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
   .additional-products {
     position: relative;
-    margin-bottom: 75px;
+    margin-bottom: 80px;
 
     &::before {
       content: "";

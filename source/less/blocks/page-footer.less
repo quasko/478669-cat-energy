@@ -10,8 +10,23 @@
 }
 
 .page-footer__logo {
-  padding: 33px 0;
-  margin: 0 auto;
+  text-align: center;
+  margin: 0;
+
+  &--link {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
+.page-footer__logo-image {
+  padding: 36px 0 31px;
 }
 
 @media (min-width: @tablet-width) {

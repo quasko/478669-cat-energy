@@ -15,8 +15,13 @@
     left: 0;
     width: 320px;
     height: 304px;
-    background-color: #65a93c;
+    background-color: @bg-green;
     background-image: url("../img/index-background-mobile@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+      background-size: 320px auto;
+    }
   }
 }
 
@@ -46,6 +51,8 @@
 
 .program__image {
   position: relative;
+  width: 280px;
+  height: 270px;
 }
 
 .program__link {
@@ -55,10 +62,20 @@
   text-align: center;
   text-transform: uppercase;
   color: white;
-  background-color: #68b738;
+  background-color: @bg-green;
   display: block;
   width: 100%;
   padding: 11px 0;
+
+  &:hover,
+  &:focus {
+    background-color: @bg-green-hover;
+  }
+
+  &:active {
+    background-color: @bg-green-hover;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -95,7 +112,7 @@
   .program__image {
     position: absolute;
     z-index: -1;
-    left: 110px;
+    left: 30px;
     top: 230px;
     height: 610px;
     width: auto;
@@ -106,6 +123,7 @@
     display: inline;
     font-size: 20px;
     line-height: 20px;
+    padding-right: 30px;
   }
 }
 
@@ -118,7 +136,7 @@
   }
 
   .program__title {
-    margin-top: 85px;
+    margin-top: 100px;
   }
 
   .program__text {
@@ -128,9 +146,9 @@
   .program__image {
     position: absolute;
     z-index: -1;
-    bottom: 0;
-    left: 500px;
-    /*временно пока нету больших картинок*/
-    display: none;
+    top: -81px;
+    left: 488px;
+    width: 552px;
+    height: auto;
   }
 }
