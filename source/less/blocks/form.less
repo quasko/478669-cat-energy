@@ -31,8 +31,22 @@
   }
 
   &--contacts {
+    .form__item {
+      flex-direction: row-reverse;
+    }
+
     .form__label {
       margin-right: 11px;
+    }
+
+    .form__input-text {
+      &:focus + label {
+        fill: @bg-green;
+      }
+
+      &:invalid + label {
+        fill: #ff8282;
+      }
     }
   }
 
@@ -135,6 +149,14 @@
       }
     }
   }
+
+  &--email {
+    svg {
+      position: absolute;
+      top: 3px;
+      left: 252px;
+    }
+  }
 }
 
 .form__input-radio:checked + label {
@@ -177,12 +199,14 @@
   }
 
   &:focus {
-    border: 1px solid @black4;
+    border: 2px solid @black4;
     outline: none;
+    padding: 11px;
   }
 
   &:invalid {
-    border: 1px solid #ff8282;
+    border: 2px solid #ff8282;
+    padding: 11px;
   }
 }
 

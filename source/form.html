@@ -75,12 +75,22 @@
               <h2 class="form__legend form__legend--owner">Контактные данные (владельца кота)</h2>
               <ul class="form__list form__list--contacts">
                 <li class="form__item">
-                  <label class="form__label form__label--email" for="form-email">e-mail:*</label>
                   <input class="form__input-text form__input-text--email" type="email" placeholder="kuklachev@gmail.com" id="form-email" name="email" required>
+                  <label class="form__label form__label--email" for="form-email">
+                    e-mail:*
+                    <svg width="17" height="13" aria-hidden="true" role="presentation">
+                      <use xlink:href="img/sprite.svg#icon-email"></use>
+                    </svg>
+                  </label>
                 </li>
                 <li class="form__item">
-                  <label class="form__label form__label--phone" for="form-phone">телефон:*</label>
-                  <input class="form__input-text form__input-text--phone" type="text" placeholder="8 (960) 900-60-90" id="form-phone" name="phone" required>
+                  <input class="form__input-text form__input-text--phone" type="text" placeholder="8 (960) 900-60-90" id="form-phone" name="phone">
+                  <label class="form__label form__label--phone" for="form-phone">
+                    телефон:*
+                    <svg width="17" height="13" aria-hidden="true" role="presentation">
+                      <use xlink:href="img/sprite.svg#icon-phone"></use>
+                    </svg>
+                  </label>
                 </li>
               </ul>
             </div>
@@ -140,26 +150,34 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vk" href="#">
-                <img src="img/icon-vk-mobile.svg" width="22" height="12" alt="vk">
+              <a class="social__link social__link--vk" href="#" aria-label="Переход на сайт vk">
+                <svg  width="22" height="12">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--ig" href="#">
-                <img src="img/icon-insta-mobile.svg" width="16" height="16" alt="instagramm">
+              <a class="social__link social__link--ig" href="#" aria-label="Переход на сайт instagram">
+                <svg  width="16" height="16">
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--fb" href="#">
-                <img src="img/icon-fb-mobile.svg" width="10" height="19" alt="facebook">
+              <a class="social__link social__link--fb" href="#" aria-label="Переход на сайт facebook">
+                <svg width="10" height="19">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
               </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="http://htmlacademy.ru">HTML Academy</a>
-          <a class="copyright__link-logo" href="http://htmlacademy.ru">
-            <img class="copyright__logo" src="img/htmlacademy.svg"  width="60" height="80" alt="copyright logo">
+          <a class="copyright__link-logo" href="http://htmlacademy.ru" aria-label="Переход на сайт в HTML Academy">
+            <svg class="copyright__logo" width="60" height="80">
+              <use xlink:href="img/sprite.svg#logo-academy"></use>
+            </svg>
           </a>
         </div>
       </div>
