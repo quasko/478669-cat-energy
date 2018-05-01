@@ -31,22 +31,16 @@
   }
 
   &--contacts {
-    .form__item {
-      flex-direction: row-reverse;
-    }
-
     .form__label {
       margin-right: 11px;
     }
 
-    .form__input-text {
-      &:focus + label {
-        fill: @bg-green;
-      }
+    .form__input-text:focus + .form__input-icon {
+      fill: @bg-green;
+    }
 
-      &:invalid + label {
-        fill: #ff8282;
-      }
+    .form__input-text:invalid + .form__input-icon {
+      fill: #ff8282;
     }
   }
 
@@ -72,6 +66,7 @@
 
 .form__item {
   display: flex;
+  position: relative;
   align-items: center;
   margin-bottom: 15px;
 
@@ -149,14 +144,6 @@
       }
     }
   }
-
-  &--email {
-    svg {
-      position: absolute;
-      top: 3px;
-      left: 252px;
-    }
-  }
 }
 
 .form__input-radio:checked + label {
@@ -186,7 +173,7 @@
   width: 100%;
   box-sizing: border-box;
   min-height: 150px;
-  padding: 13px;
+  padding: 12px;
 }
 
 .form__input-text,
@@ -288,6 +275,20 @@
   line-height: 16px;
   color: @black4;
   text-align: center;
+}
+
+.form__input-icon {
+  position: absolute;
+
+  &--email {
+    top: 16px;
+    right: 16px;
+  }
+
+  &--phone {
+    top: 13px;
+    right: 14px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -402,17 +403,37 @@
     padding: 10px;
     font-size: 20px;
     line-height: 20px;
+
+    &:focus,
+    &:invalid {
+      padding: 9px;
+    }
   }
 
   .form__input-text {
     padding-left: 15px;
 
+    &:focus,
+    &:invalid {
+      padding-left: 14px;
+    }
+
     &--email {
       padding-left: 18px;
+
+      &:focus,
+      &:invalid {
+        padding-left: 17px;
+      }
     }
 
     &--phone {
       padding-left: 20px;
+
+      &:focus,
+      &:invalid {
+        padding-left: 19px;
+      }
     }
   }
 
@@ -450,6 +471,11 @@
     min-height: 175px;
     padding: 14px 17px;
     margin-bottom: 5px;
+
+    &:focus,
+    &:invalid {
+      padding: 13px 16px;
+    }
   }
 
   .form__fieldset-button-wrapper {
@@ -469,6 +495,18 @@
   .form__required-notify {
     font-size: 16px;
     line-height: 16px;
+  }
+
+  .form__input-icon {
+    &--email {
+      top: 20px;
+      right: 19px;
+    }
+
+    &--phone {
+      top: 17px;
+      right: 16px;
+    }
   }
 }
 

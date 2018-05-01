@@ -29,13 +29,18 @@
     left: -7px;
   }
 
-  &:hover {
-    fill: @bg-green;
+  &:hover,
+  &:focus {
+    .social__icon {
+      fill: @bg-green;
+    }
   }
 
   &:active {
-    fill: @bg-green;
-    opacity: 0.3;
+    .social__icon {
+      fill: @bg-green;
+      opacity: 0.3;
+    }
   }
 }
 
