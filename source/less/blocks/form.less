@@ -196,10 +196,7 @@
     padding: 11px;
   }
 
-  &::placeholder,
-  &::-moz-placeholder,
-  &::-webkit-input-placeholder,
-  &:-ms-input-placeholder {
+  &::placeholder {
     color: @black4;
   }
 }
@@ -288,13 +285,13 @@
   position: absolute;
 
   &--email {
-    top: 16px;
+    top: 0;
     right: 16px;
   }
 
   &--phone {
-    top: 13px;
-    right: 14px;
+    top: 0;
+    right: 12px;
   }
 }
 
@@ -417,6 +414,12 @@
     }
   }
 
+  @-moz-document url-prefix("") {
+    .form__input-text {
+      line-height: 30px;
+    }
+  }
+
   .form__input-text {
     padding-left: 15px;
 
@@ -506,13 +509,13 @@
 
   .form__input-icon {
     &--email {
-      top: 20px;
+      top: 5px;
       right: 19px;
     }
 
     &--phone {
-      top: 17px;
-      right: 16px;
+      top: 6px;
+      right: 14px;
     }
   }
 }
