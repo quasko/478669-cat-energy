@@ -194,10 +194,13 @@
   &:invalid {
     border: 2px solid #ff8282;
     padding: 11px;
+    /*firefox*/
+    box-shadow: none;
   }
 
   &::placeholder {
     color: @black4;
+    opacity: 1;
   }
 }
 

@@ -4,18 +4,17 @@ var bigLat = 59.93910591028313,
   bigLng = 30.318416256314094,
   smallLat = 59.9387942,
   smallLng = 30.3230833;
-var lat, lng;
+var lat, lng, latLng;
 
 function initMap() {
   if (window.matchMedia("(min-width: 1300px)").matches) {
-    lat = bigLat;
-    lng = bigLng;
+    latLng = new google.maps.LatLng(bigLat,bigLng);
   } else {
-    lat = smallLat;
-    lng = smallLng;
+    latLng = new google.maps.LatLng(smallLat,smallLng);
   }
+
   map = new google.maps.Map(document.querySelector(".contacts__map"), {
-    center: {lat, lng},
+    center: latLng,
     zoom: 17
   });
   var image = "../img/map-pin.png";
