@@ -63,27 +63,21 @@
   }
 
   .main-menu__link {
-    color: white;
+    color: @black1;
     font-size: 20px;
     line-height: 25px;
 
-    &::after {
-      background-color: #ffffff;
-    }
-
-    &--catalog {
-      color: @black1;
-
+    &--active {
       &::after {
         background-color: @bg-green;
       }
     }
 
-    &--form {
-      color: @black1;
+    &--index {
+      color: #ffffff;
 
       &::after {
-        background-color: @bg-green;
+        background-color: #ffffff;
       }
     }
   }

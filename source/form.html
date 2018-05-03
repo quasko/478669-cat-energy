@@ -9,26 +9,24 @@
   <body>
     <div class="container">
       <header class="page-header">
-        <nav class="main-nav">
-          <div class="top-bar">
-            <a class="top-bar__logo top-bar__logo--link" href="index.html">
-              <picture>
-                <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
-                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                <img class="top-bar__logo-image" src="img/logo-mobile.svg" width="192" height="66" alt="Кэт энерджи">
-              </picture>
-            </a>
-            <button class="top-bar__button">Закрыть меню</button>
-          </div>
-          <ul class="main-menu">
+        <a class="page-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="192" height="66" alt="Кэт энерджи">
+          </picture>
+        </a>
+        <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="main-nav__list main-menu">
             <li class="main-menu__item">
-              <a class="main-menu__link main-menu__link--form" href="index.html">Главная</a>
+              <a class="main-menu__link" href="index.html">Главная</a>
             </li>
             <li class="main-menu__item">
-              <a class="main-menu__link main-menu__link--form" href="catalog.html">Каталог продукции</a>
+              <a class="main-menu__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-menu__item">
-              <a class="main-menu__link main-menu__link--form main-menu__link--active">Подбор программы</a>
+              <a class="main-menu__link main-menu__link--active">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -83,7 +81,7 @@
                 </li>
                 <li class="form__item">
                   <label class="form__label form__label--phone" for="form-phone">телефон:*</label>
-                  <input class="form__input-text form__input-text--phone" type="text" placeholder="8 (960) 900-60-90" id="form-phone" name="phone">
+                  <input class="form__input-text form__input-text--phone" type="tel" placeholder="8 (960) 900-60-90" id="form-phone" name="phone">
                   <svg class="form__input-icon form__input-icon--phone" width="22" height="42" aria-hidden="true" role="presentation">
                     <use xlink:href="img/sprite.svg#icon-phone"></use>
                   </svg>
@@ -180,5 +178,6 @@
     </footer>
     <script src="js/picturefill.min.js"></script>
     <script src="js/svg4everybody.min.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>
