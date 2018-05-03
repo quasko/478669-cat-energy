@@ -3,7 +3,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0;
 }
 
 .copyright__link {
@@ -11,17 +10,39 @@
   font-size: 16px;
   line-height: 16px;
   color: @black4;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__link-logo {
+  &:hover,
+  &:focus {
+    .copyright__logo {
+      fill: @bg-green;
+    }
+  }
+
+  &:active {
+    .copyright__logo {
+      fill: @bg-green;
+      opacity: 0.3;
+    }
+  }
 }
 
 .copyright__logo {
-  width: 39px;
-  height: auto;
+  width: 55px;
+  height: 80px;
   position: relative;
-  right: -6px;
+  right: -21px;
+  fill: @icon-grey;
+  padding-top: 19px;
 }
 
 @media (min-width: @tablet-width) {
   .copyright__link {
-    margin-right: 9px;
+    margin-right: -6px;
   }
 }

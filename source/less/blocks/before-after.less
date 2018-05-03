@@ -35,7 +35,7 @@
 }
 
 .before-after__image {
-  left: -20px;
+  left: -19px;
   top: -3px;
   position: relative;
   margin-top: 37px;
@@ -57,6 +57,11 @@
   text-align: center;
   margin: 0;
   margin-left: 3px;
+}
+
+.before-after__image-wrapper {
+  width: 280px;
+  overflow: hidden;
 }
 
 @media (min-width: @tablet-width) {
@@ -112,6 +117,11 @@
     margin-top: 53px;
     margin-bottom: 20px;
   }
+
+  .before-after__image-wrapper {
+    width: 690px;
+    overflow: hidden;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -152,6 +162,7 @@
     width: 610px;
     height: 517px;
     overflow: hidden;
+    margin-bottom: 43px;
   }
 
   .before-after__price-wrapper {
